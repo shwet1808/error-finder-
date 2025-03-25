@@ -7,7 +7,7 @@ module.exports.getReview = async (req, res) => {
             return res.status(400).json({ error: "Code is required" });
         }
 
-        const response = await generateContent(code); // Corrected function call
+        const response = await generateContent(code); 
         res.json({ response }); 
     } catch (error) {
         console.error("Error in getReview:", error);
