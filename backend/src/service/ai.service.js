@@ -60,6 +60,7 @@ const model = genAI.getGenerativeModel({
                 	•	❌ fetch() is asynchronous, but the function doesn’t handle promises correctly.
                 	•	❌ Missing error handling for failed API calls.
 
+               
                 ✅ Recommended Fix:
 
                         \`\`\`javascript
@@ -73,6 +74,7 @@ const model = genAI.getGenerativeModel({
                         return null;
                     }
                 }
+                   
                    \`\`\`
 
                 💡 Improvements:
