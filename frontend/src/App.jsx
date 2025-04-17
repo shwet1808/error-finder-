@@ -51,12 +51,11 @@ function App() {
           Review
         </button>
       </div>
-      <div className="right">
-        <h3>Code Review:</h3>
-        <pre>
-          <ReactMarkdown>{review}</ReactMarkdown>
-        </pre>
-      </div>
+      
+     <div className="right">
+  <h3>Code Review:</h3>
+  <ReactMarkdown>{review}</ReactMarkdown>
+</div>
     </main>
   );
 }
