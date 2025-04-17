@@ -53,7 +53,7 @@ function App() {
       </div>
       
      <div className="right">
-  <h3>Code Review:</h3>
+  <h3 >Code Review:</h3>
   <ReactMarkdown>{review}</ReactMarkdown>
 </div>
     </main>

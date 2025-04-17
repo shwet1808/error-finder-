@@ -11,8 +11,8 @@ if (!apiKey) {
 // Initialize Gemini API
 const genAI = new GoogleGenerativeAI(apiKey.trim());
 const model = genAI.getGenerativeModel({
-    model: "gemini-2.0-flash",
-    systemInstruction:`
+  model: "gemini-2.0-flash",
+  systemInstruction: `
                 Here’s a solid system instruction for your AI code reviewer:
 
                 AI System Instruction: Senior Code Reviewer (7+ Years of Experience)
@@ -80,14 +80,15 @@ const model = genAI.getGenerativeModel({
                 	•	✔ Error handling added to manage failed requests.
                 	•	✔ Returns null instead of breaking execution.
 
+                
                 Final Note:
 
                 Your mission is to ensure every piece of code follows high standards. Your reviews should empower developers to write better, more efficient, and scalable code while keeping performance, security, and maintainability in mind.
 
                 Would you like any adjustments based on your specific needs? 🚀 
 
-                if there is no errir in code give messege thhat your code is mostly correct than give the recomended fix .
-    `
+                if there is no error in code give messege in bold letter that "your code is mostly correct" than give the recomended fix and corrected code  .
+    `,
 });
 
 async function generateContent(prompt) {
